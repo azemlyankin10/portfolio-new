@@ -1,0 +1,44 @@
+.header {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+		// .nav__logo
+
+		&__logo {
+		}
+
+		// .nav__list
+
+		&__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+		}
+
+		// .nav__list-item
+
+		&__list-item {
+      &:not(:last-child) {
+        margin-right: 23px;
+      }
+		}
+
+		// .nav__list-item-link
+
+		&__list-item-link {
+      color: var(--light-color);
+      font-size: 18px;
+		}
+}
+.image {
+}

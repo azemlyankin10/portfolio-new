@@ -1,0 +1,57 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/subhero";
+
+// тестовые стили, удалите их
+
+.site-container {
+  position: relative;
+  &::before {
+    content: '';
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../img/bg.svg') no-repeat center center / cover;
+  }
+}
+
+.load-wave {
+  z-index: 10;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+
+  &::before {
+    content: '';
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #0066FF;
+  }
+
+  &::after {
+    content: '';
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background: url('../img/wave-bg.svg') no-repeat center center / cover;
+  }
+}
+
+// .main {
+//   max-height: 100vh;
+// }

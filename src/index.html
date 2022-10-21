@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="load-wave"></div>
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__left animate-hero-text">
+            <h1 class="hero__title">Web developer</h1>
+            <p class="hero__subtitle"></p>
+          </div>
+          <div class="hero__right animate-hero-image">
+            <div class="hero__btn">
+              <picture>
+                <source srcset="img/hero.avif" type="image/avif">
+                <source srcset="img/hero.webp" type="image/webp">
+                <img loading="lazy" src="img/hero.png" class="image hero__img" alt="hero">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <svg class="hero__arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800"><g stroke-width="10" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="rotate(45, 400, 400)"><line x1="271.5" y1="271.5" x2="528.5" y2="528.5" marker-end="url(#SvgjsMarker1121)"></line></g><defs><marker markerWidth="5" markerHeight="5" refX="2.5" refY="2.5" viewBox="0 0 5 5" orient="auto" id="SvgjsMarker1121"><polygon points="0,5 1.6666666666666667,2.5 0,0 5,2.5" fill="#ffffff"></polygon></marker></defs>
+        </svg>
+      </section>
+
+      <section class="subhero">
+        <div class="container">
+          <div class="subhero__container">
+            <h2 class="subhero__title"></h2>
+            <video autoplay muted loop class="subhero__video">
+              <source src="video/subhero.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>
