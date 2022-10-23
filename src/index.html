@@ -39,6 +39,51 @@
         </div>
       </section>
 
+      <section class="map animate-map">
+        <div class="container">
+          <ul class="map__list">
+            <li class="map__list-elem">
+              <a href="#" class="map__list-link">
+                <div class="map__list-elem-left">
+                  <picture>
+                    <source srcset="img/hero.avif" type="image/avif">
+                    <source srcset="img/hero.webp" type="image/webp">
+                    <img loading="lazy" src="img/hero.png" class="image animate-map-about" width="500" height="500" alt="about">
+                  </picture>
+                </div>
+                <p class="map__list-elem-right map__list-elem-text animate-map-about-triger">About</p>
+              </a>
+            </li>
+
+            <li class="map__list-elem">
+              <a href="#" class="map__list-link map__list-link-reverse">
+                <div class="map__list-elem-left">
+                  <picture>
+                    <source srcset="img/progects.avif" type="image/avif">
+                    <source srcset="img/progects.webp" type="image/webp">
+                    <img loading="lazy" src="img/progects.png" class="image animate-map-progects" width="500" height="500" alt="progects">
+                  </picture>
+                </div>
+                <p class="map__list-elem-right map__list-elem-text animate-map-progects-triger">Progects</p>
+              </a>
+            </li>
+
+            <li class="map__list-elem">
+              <a href="#" class="map__list-link">
+                <div class="map__list-elem-left">
+                  <picture>
+                    <source srcset="img/contacts.avif" type="image/avif">
+                    <source srcset="img/contacts.webp" type="image/webp">
+                    <img loading="lazy" src="img/contacts.png" class="image animate-map-contacts" width="500" height="500" alt="contacts">
+                  </picture>
+                </div>
+                <p class="map__list-elem-right map__list-elem-text animate-map-contacts-triger">Contacts</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
     </main>
 
     @include('partials/footer.html')

@@ -21,8 +21,8 @@ gsap.fromTo('.load-wave', {y: 0, opacity: 1}, {y: '-200%', opacity: .5, duration
 gsap.to('.animate-hero-image', {
   scrollTrigger: {
     trigger: '.subhero',
-    start: '-=300 center',
-    end: '-=100',
+    start: 'top bottom',
+    end: 'bottom bottom',
     scrub: true,
   },
   y: 300,
@@ -34,13 +34,56 @@ gsap.to('.animate-hero-image', {
 gsap.timeline({
     scrollTrigger: {
       trigger: '.subhero',
-      start: '-=50%',
-      end: '-=200',
+      start: 'top center',
+      end: 'top center',
       snap: {
         duration: 3,
       }
     }
   })
-  .from(".subhero", {opacity: .3})
-  .to(".subhero", {opacity: 1})
+  .from(".subhero", {opacity: .3, y: 100})
+  .to(".subhero", {opacity: 1, y: 0})
 
+gsap.timeline({
+  scrollTrigger: {
+    trigger: '.animate-map-about-triger',
+    start: 'top bottom',
+    end: 'bottom 70%',
+    // endTrigger: '.animate-map-about',
+    scrub: true,
+    // markers: true,
+    snap: {
+      duration: 5,
+    }
+  }
+})
+.from(".animate-map-about", {opacity: 0, y: -300, x: -150})
+.to(".animate-map-about", {opacity: 1, y: 0, x: 0})
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: '.animate-map-progects-triger',
+    start: 'top bottom',
+    end: 'bottom 70%',
+    scrub: true,
+    snap: {
+      duration: 5,
+    }
+  }
+})
+.from(".animate-map-progects", {opacity: 0, y: -300, x: 150})
+.to(".animate-map-progects", {opacity: 1, y: 0, x: 0})
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: '.animate-map-contacts-triger',
+    start: 'top bottom',
+    end: 'bottom 85%',
+    scrub: true,
+    snap: {
+      duration: 5,
+    }
+  }
+})
+.from(".animate-map-contacts", {opacity: 0, y: -300, x: -150})
+.to(".animate-map-contacts", {opacity: 1, y: 0, x: 0})
